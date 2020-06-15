@@ -1,0 +1,76 @@
+{
+// FILES
+    "files.eol": "\n",
+    "files.associations": {
+        "*.tmpl": "html"
+    },
+    "files.trimTrailingWhitespace": true,
+// EDITOR
+    "editor.rulers": [
+        80,
+        100,
+    ],
+    "editor.autoClosingBrackets": false,
+    "editor.tokenColorCustomizations": null,
+    "editor.tokenColorCustomizationsExperimental": null,
+    "editor.renderWhitespace": "all",
+    "editor.cursorStyle": "block",
+    "editor.minimap.showSlider": "always",
+// TERMINAL
+    "terminal.external.windowsExec": "C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.integrated.shell.windows": "C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe",
+// EXPLORER
+    "explorer.confirmDragAndDrop": false,
+// WORKBENCH
+    "workbench.settings.editor": "ui",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 8,
+    "workbench.editor.mouseBackForwardToNavigate": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Monokai",
+    "workbench.colorCustomizations": {
+        "[Monokai]": {
+            // Editor
+                "editor.background": "#2c2d30",
+                "editor.foreground": "#d1d1d1",
+                "editorGutter.background": "#2c2d30",
+                "editor.selectionBackground": "#8ba6b175",
+                "editor.selectionHighlightBackground": "#2498c575",
+                "editor.lineHighlightBackground": "#383838", // Current line highlight
+                "editorCursor.background": "#ff0000",
+            // Panels + Termainal
+                "panel.background": "#373d3f",
+                "panel.border": "#28a5d6",
+                "panelTitle.activeBorder": "#28a5d6",
+                "panelTitle.activeForeground": "#28a5d6",
+                "panelTitle.inactiveForeground": "#696969",
+            // Titlebar
+                "titleBar.activeBackground": "#28a5d6",
+                "titleBar.activeForeground": "#fff",
+            // Sidebar
+                "sideBar.background": "#252629",
+                "sideBarSectionHeader.background": "#373d3f",
+                "activityBar.background": "#373d3f",
+                // "sideBarSectionHeader.border": "#364F4D",
+                "list.inactiveSelectionBackground": "#28a5d683",
+                "list.inactiveSelectionForeground": "#ffffff",
+            // Tab bar
+                "tab.activeBackground": "#656d74",
+                "tab.activeBorder": "#28a5d6",
+                "tab.border": "#4d4d4d",
+                "tab.inactiveModifiedBorder": "#ff0000",
+                "tab.activeModifiedBorder": "#ff0000",
+        },
+    },
+// EXTENSIONS
+    "extensions.ignoreRecommendations": true,
+    "markdown-toc.orderedList": true,
+// WINDOW
+    "window.zoomLevel": 0,
+    "window.newWindowDimensions": "maximized",
+    "explorer.compactFolders": false,
+    "explorer.openEditors.visible": 0,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+}

@@ -1,0 +1,8 @@
+[alias]
+    lg = log --color --graph --pretty=format:'%C(yellow)%h%Creset\t%<(12)%Cgreen%cr%Creset %C(bold blue)[%an]%Creset:%s %Cred%d%Creset'
+    ll = log --color --pretty=format:'%<(7)%C(yellow)%h%Creset %<(12)%Cgreen%cr%Creset %C(bold blue)[%an]%Creset:%s %Cred%d%Creset' --decorate --stat
+    llg = log --color --pretty=format:'%n================================================================================%nHash:\t%C(yellow)%H%Creset%Cred%d%Creset%nDate:\t%Cgreen%cD%Creset (%Cgreen%cr%Creset)%nAuthor:\t%C(bold blue)%an%Creset (%C(bold blue)%ce%Creset)%n%n%C(cyan)%s%Creset%n%b%n' --stat
+    last = log --color --pretty=format:'%nHash:\t%C(yellow)%H%Creset%Cred%d%Creset%nDate:\t%Cgreen%cD%Creset (%Cgreen%cr%Creset)%nAuthor:\t%C(bold blue)%an%Creset (%C(bold blue)%ce%Creset)%n%n%s%n%b%n' --stat -1 HEAD
+    filelog = log -u
+    unstage = reset HEAD --
+    fullhash = rev-parse
