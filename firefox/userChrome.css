@@ -1,5 +1,9 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
+/* ========================================================================= */
+/* TABS */
+/* ========================================================================= */
+
 /* Tab-bar: resize */
 #TabsToolbar 
 #TabsToolbar .tabs-newtab-button,
@@ -13,7 +17,7 @@
 
 /* Tab, active */
 .tab-background[selected="true"] {
-    background: #fcedd6 !important;
+    background: #ffc6b3 !important;
 }
 
 /* Tab, Favicon */
@@ -33,10 +37,19 @@ tab .tab-icon-image {
     height: 15px;
 }
 
+/* Tab, close button, active tab: hide */
+.tab-close-button[selected="true"] {
+    display: none;
+}
+
 /* Tab, active tab line */
 .tab-line {
     display: none;
 }
+
+/* ========================================================================= */
+/* TITLEBAR */
+/* ========================================================================= */
 
 /* Window min,max,close buttons: button sizeing */
 .titlebar-button>.toolbarbutton-icon {
@@ -52,6 +65,10 @@ tab .tab-icon-image {
     padding-right: 10px !important;
     padding-top: 10px !important;
 }
+
+/* ========================================================================= */
+/* NAVBAR Show/Hide */
+/* ========================================================================= */
 
 /* Navbar: Hide */
 #nav-bar:not([customizing]){
@@ -82,13 +99,9 @@ tab .tab-icon-image {
     opacity: 100;
 }
 
-/* Scrollbar: hide  */
-:-moz-any(#content,#appcontent) browser{
-    margin-right:-17px!important;
-    overflow-y:scroll;
-    margin-bottom: 0px!important;
-    overflow-x:scroll;
-}
+/* ========================================================================= */
+/*  URL Bar */
+/* ========================================================================= */
 
 /* URL-bar: Make urlbar appear more compact */
 #urlbar[breakout]{
@@ -96,4 +109,22 @@ tab .tab-icon-image {
     width: 100% !important;
     left: 0 !important;
     top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
+}
+
+#urlbar {
+    font-size: 12px !important;
+    color: #f04f4f !important;
+    font-family: consolas !important;
+}
+
+/* ========================================================================= */
+/* SCROLLBAR */
+/* ========================================================================= */
+
+/* Scrollbar: hide  */
+:-moz-any(#content,#appcontent) browser{
+    margin-right:-17px!important;
+    overflow-y:scroll;
+    margin-bottom: 0px!important;
+    overflow-x:scroll;
 }
