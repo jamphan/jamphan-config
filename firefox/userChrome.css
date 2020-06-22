@@ -11,16 +11,31 @@
     font-size: 10px;
 }
 
-/* Tab Favicon */
+/* Tab, active */
+.tab-background[selected="true"] {
+    background: #fcedd6 !important;
+}
+
+/* Tab, Favicon */
 tab .tab-icon-image { 
     width: 14px !important; 
     height: 14px !important;
 }
 
-/* Tab separtors: remove */
-.tabbrowser-tab::before,
-.tabbrowser-tab::after {
+/* Tab, separator, active tab: remove */
+.tabbrowser-tab[selected="true"]::after {
     display: none !important;
+}
+
+/* Tab, close button */
+.tab-close-button{
+    background-color: #fcd45d;
+    height: 15px;
+}
+
+/* Tab, active tab line */
+.tab-line {
+    display: none;
 }
 
 /* Window min,max,close buttons: button sizeing */
@@ -33,9 +48,9 @@ tab .tab-icon-image {
 
 /* Window min,max,close buttons: button spacing */
 .titlebar-button {
-	padding-left: 10px !important;
-	padding-right: 10px !important;
-	padding-top: 10px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-top: 10px !important;
 }
 
 /* Navbar: Hide */
