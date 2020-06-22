@@ -45,24 +45,6 @@ tab .tab-icon-image {
 .tab-line {
     display: none;
 }
-/* ========================================================================= */
-/* TITLEBAR */
-/* ========================================================================= */
-
-/* Window min,max,close buttons: button sizeing */
-.titlebar-button>.toolbarbutton-icon {
-    height: 8px !important;
-    min-height: 8px !important;
-    width: 8px !important;
-    min-width: 8px !important;
-}
-
-/* Window min,max,close buttons: button spacing */
-.titlebar-button {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-    padding-top: 10px !important;
-}
 
 /* ========================================================================= */
 /* NAVBAR Show/Hide */
@@ -72,10 +54,10 @@ tab .tab-icon-image {
 #nav-bar:not([customizing]){
     visibility: visible;
     margin-top: -40px;
-    transition-delay: 0.2s;
+    transition-delay: 0.3s;
     filter: alpha(opacity=0);
     opacity: 0;
-    transition: visibility, ease 0.2s, margin-top, ease 0.2s, opacity, ease 0.2s !important;
+    transition: visibility, ease 0.3s, margin-top, ease 0.3s, opacity, ease 0.3s !important;
 }
 
 /* Navbar: Show */
@@ -86,7 +68,7 @@ tab .tab-icon-image {
 #navigator-toolbox:hover > #nav-bar:not([customizing]),
 #toolbar-menubar:not([inactive="true"]) ~ #nav-bar:not([customizing]) {
     visibility: visible;
-    margin-top: -6px; /* Because of reduced tab height, there is space that must be filled */
+    margin-top: -7px; /* Because of reduced tab height, there is space that must be filled */
     filter: alpha(opacity=100);
     opacity: 100;
 }
