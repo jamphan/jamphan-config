@@ -1,0 +1,84 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Tab-bar: resize */
+#TabsToolbar 
+#TabsToolbar .tabs-newtab-button,
+#TabsToolbar .tabbrowser-tab,
+#TabsToolbar .tabbrowser-tab .tab-stack,
+#TabsToolbar .tabbrowser-tab .tab-background,
+#TabsToolbar .tabbrowser-tab .tab-content {
+    height: 25px;
+    font-size: 10px;
+}
+
+/* Tab Favicon */
+tab .tab-icon-image { 
+    width: 14px !important; 
+    height: 14px !important;
+}
+
+/* Tab separtors: remove */
+.tabbrowser-tab::before,
+.tabbrowser-tab::after {
+    display: none !important;
+}
+
+/* Window min,max,close buttons: button sizeing */
+.titlebar-button>.toolbarbutton-icon {
+    height: 8px !important;
+    min-height: 8px !important;
+    width: 8px !important;
+    min-width: 8px !important;
+}
+
+/* Window min,max,close buttons: button spacing */
+.titlebar-button {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	padding-top: 10px !important;
+}
+
+/* Navbar: Hide */
+#nav-bar:not([customizing]){
+    visibility: visible;
+    margin-top: -36px;
+    transition-delay: 0.2s;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    transition: visibility, ease 0.2s, margin-top, ease 0.2s, opacity, ease 0.2s !important;
+}
+
+/* Navbar: Show */
+:root:not([customizing]) :hover > #nav-bar,
+#nav-bar:focus-within,
+#urlbar[focused="true"],
+#identity-box[open="true"],
+#navigator-toolbox:hover > #nav-bar:not([customizing]),
+#toolbar-menubar:not([inactive="true"]) ~ #nav-bar:not([customizing]) {
+    visibility: visible;
+    margin-top: -4px; /* Because of reduced tab height, there is space that must be filled */
+    filter: alpha(opacity=100);
+    opacity: 100;
+}
+
+#nav-bar .toolbarbutton-1[open="true"]{
+    visibility: visible;
+    margin-top: 0px;
+    opacity: 100;
+}
+
+/* Scrollbar: hide  */
+:-moz-any(#content,#appcontent) browser{
+    margin-right:-17px!important;
+    overflow-y:scroll;
+    margin-bottom: 0px!important;
+    overflow-x:scroll;
+}
+
+/* URL-bar: Make urlbar appear more compact */
+#urlbar[breakout]{
+    margin-inline-start: 0px !important;
+    width: 100% !important;
+    left: 0 !important;
+    top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
+}
