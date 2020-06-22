@@ -16,8 +16,9 @@
 }
 
 /* Tab, active */
-.tab-background[selected="true"] {
-    background: #ffc6b3 !important;
+.tab-content[selected="true"] {
+    color: #0f7dd6 !important;
+    font-weight: bolder;
 }
 
 /* Tab, Favicon */
@@ -33,7 +34,6 @@ tab .tab-icon-image {
 
 /* Tab, close button */
 .tab-close-button{
-    background-color: #fcd45d;
     height: 15px;
 }
 
@@ -113,8 +113,9 @@ tab .tab-icon-image {
 
 #urlbar {
     font-size: 12px !important;
-    color: #f04f4f !important;
+    color: #0f7dd6 !important;
     font-family: consolas !important;
+    font-weight: bold;
 }
 
 /* ========================================================================= */
